@@ -11,8 +11,8 @@
     <ProjectGuid>{4BF5B958-334C-4C78-9D42-09FB36DB8924}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Project_Havryliuk_Oleksandr_Kyiv</RootNamespace>
-    <AssemblyName>Project_Havryliuk_Oleksandr_Kyiv</AssemblyName>
+    <RootNamespace>ChromeDevToolsTask</RootNamespace>
+    <AssemblyName>ChromeDevToolsTask</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,7 +93,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="LoremIpsumFeature.feature" />
+    <None Include="TaskFeature.feature" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\WebDriverIEDriver.2.45.0.0\tools\IEDriverServer-license.txt">

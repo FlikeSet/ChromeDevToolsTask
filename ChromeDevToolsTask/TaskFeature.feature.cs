@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Project_Havryliuk_Oleksandr_Kyiv
+namespace ChromeDevToolsTask
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,7 +20,7 @@ namespace Project_Havryliuk_Oleksandr_Kyiv
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class SearchingOnGoogle_ComFeature
+    public partial class MailOnGmail_ComFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace Project_Havryliuk_Oleksandr_Kyiv
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "LoremIpsumFeature.feature"
+#line 1 "TaskFeature.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,7 @@ namespace Project_Havryliuk_Oleksandr_Kyiv
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "Searching on google.com", "\tCheck knowledge of WebDriver", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "Mail on gmail.com", "\tCheck knowledge of WebDriver", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -63,9 +63,9 @@ namespace Project_Havryliuk_Oleksandr_Kyiv
         public void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Searching on google.com")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Mail on gmail.com")))
             {
-                global::Project_Havryliuk_Oleksandr_Kyiv.SearchingOnGoogle_ComFeature.FeatureSetup(null);
+                global::ChromeDevToolsTask.MailOnGmail_ComFeature.FeatureSetup(null);
             }
         }
         
@@ -91,12 +91,16 @@ namespace Project_Havryliuk_Oleksandr_Kyiv
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void CheckSearchpageContainsImages(string input, string[] exampleTags)
+        public virtual void CheckLoginAndMailOnGmail_Com(string login, string password, string receiver, string subject, string text, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("input", input);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check searchpage contains images", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            argumentsOfScenario.Add("login", login);
+            argumentsOfScenario.Add("password", password);
+            argumentsOfScenario.Add("receiver", receiver);
+            argumentsOfScenario.Add("subject", subject);
+            argumentsOfScenario.Add("text", text);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check login and mail on gmail.com", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -108,39 +112,49 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 5
- testRunner.When(string.Format("User makes input is {0}", input), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("User input login is {0}", login), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 6
- testRunner.When("User click on searchbutton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("User clicks on next loginbutton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 7
- testRunner.Then("User checks searchpage contains images", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When(string.Format("User input password is {0}", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 8
+ testRunner.Then("User clicks on next passwordbutton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 9
+ testRunner.Given("User clicks on writebutton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 10
+ testRunner.When(string.Format("User input receiver is {0}", receiver), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 11
+ testRunner.When(string.Format("User input subject is {0}", subject), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+ testRunner.When(string.Format("User input message is {0}", text), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 13
+ testRunner.Then("User clicks on sendbutton", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check searchpage contains images: cats images")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Searching on google.com")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "cats images")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:input", "cats images")]
-        public void CheckSearchpageContainsImages_CatsImages()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check login and mail on gmail.com: ac.for.testing@gmail.com")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Mail on gmail.com")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "ac.for.testing@gmail.com")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:login", "ac.for.testing@gmail.com")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:password", "frfeynajhntcnsyu9")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:receiver", "flikeset99@gmail.com")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:subject", "Test_message")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:text", "This is test message")]
+        public void CheckLoginAndMailOnGmail_Com_Ac_For_TestingGmail_Com()
         {
 #line 4
-this.CheckSearchpageContainsImages("cats images", ((string[])(null)));
-#line hidden
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Check searchpage contains images: зображення кавуна")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Searching on google.com")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "зображення кавуна")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:input", "зображення кавуна")]
-        public void CheckSearchpageContainsImages_ЗображенняКавуна()
-        {
-#line 4
-this.CheckSearchpageContainsImages("зображення кавуна", ((string[])(null)));
+this.CheckLoginAndMailOnGmail_Com("ac.for.testing@gmail.com", "frfeynajhntcnsyu9", "flikeset99@gmail.com", "Test_message", "This is test message", ((string[])(null)));
 #line hidden
         }
     }

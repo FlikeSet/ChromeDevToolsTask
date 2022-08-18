@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 
 
-namespace Project_Havryliuk_Oleksandr_Kyiv.PageObjects
+namespace ChromeDevToolsTask.PageObjects
 {
     public class BasePage
     {

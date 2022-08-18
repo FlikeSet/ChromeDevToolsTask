@@ -2,11 +2,11 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("Project_Havryliuk_Oleksandr_Kyiv")]
+[assembly: AssemblyTitle("ChromeDevToolsTask")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Project_Havryliuk_Oleksandr_Kyiv")]
+[assembly: AssemblyProduct("ChromeDevToolsTask")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

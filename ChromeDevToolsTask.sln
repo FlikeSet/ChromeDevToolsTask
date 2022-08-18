@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Havryliuk_Oleksandr_Kyiv", "Project_Havryliuk_Oleksandr_Kyiv\Project_Havryliuk_Oleksandr_Kyiv.csproj", "{4BF5B958-334C-4C78-9D42-09FB36DB8924}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChromeDevToolsTask", "ChromeDevToolsTask\ChromeDevToolsTask.csproj", "{4BF5B958-334C-4C78-9D42-09FB36DB8924}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
